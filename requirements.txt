@@ -1,2 +1,7 @@
 Flask==3.0.0
 pytest==7.4.0
+google-cloud-aiplatform
+sentence-transformers
+ipytest
+pytest-mock
+mock
