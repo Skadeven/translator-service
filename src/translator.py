@@ -1,12 +1,13 @@
-from google.colab import auth
 from google.cloud import aiplatform
 from vertexai.preview.language_models import ChatModel
+import google.auth
 
-auth.authenticate_user()
+credentials, project = google.auth.default()
 
 aiplatform.init(
     project="rapid-pivot-416916",
     location='us-central1',
+    credentials=credentials,
 )
 
 chat_model = ChatModel.from_pretrained("chat-bison@001")
