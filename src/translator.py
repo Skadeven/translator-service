@@ -5,7 +5,7 @@ import google.auth
 credentials, project = google.auth.default()
 
 aiplatform.init(
-    project="rapid-pivot-416916",
+    project=project,
     location='us-central1',
     credentials=credentials,
 )
